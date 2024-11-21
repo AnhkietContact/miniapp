@@ -5,7 +5,7 @@ const Spin = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <div className="rounded-xl bg-gradient-white bg-opacity-20 py-10 px-10">
-        <div className="flex flex-col gap-5 mb-5">
+        <div className="flex flex-col items-center gap-5 mb-5">
           <span className="font-inter font-bold text-[25px]">Lucky Spin</span>
           <span className="font-inter text-[15px] ">Cost per spin: 10</span>
         </div>

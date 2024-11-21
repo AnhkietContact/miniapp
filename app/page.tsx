@@ -155,7 +155,6 @@ function Home() {
         <div className="container py-20">
           <div className="flex justify-between items-center">
             <Image src="/images/Phone-2.png" alt="" width={387} height={625} />
-
             <div>
               <div className="rounded-full w-full max-w-[179px] bg-[#470000]  mx-auto md:mx-0">
                 <div className="flex justify-center items-center py-2">
@@ -220,28 +219,45 @@ function Home() {
               <span className="font-rubik font-semibold text-[32px]">
                 Lucky Spin & Win
               </span>
-             <div className="w-full max-w-[600px] mt-10">
+              <div className="w-full max-w-[600px] mt-10">
                 <span className="font-inter font-medium text-[15px]">
                   Lucky Spin & Win offers users an exciting and thrilling
-                  experience by spinning a lucky wheel to earn points as rewards.
-                  Each spin is not just an opportunity to test one's luck but also
-                  helps users accumulate points that can be used for various
-                  purposes on the platform. Users can earn these reward points
-                  with each spin, with the potential to win larger amounts if they
-                  spin multiple times. Points not only enhance the excitement of
-                  using the application but also encourage users to return
-                  frequently to accumulate and utilize their points for exclusive
-                  services or content. With Lucky Spin & Win, MINI QMP creates an
-                  engaging gamification environment while providing valuable
-                  rewards for user participation.
+                  experience by spinning a lucky wheel to earn points as
+                  rewards. Each spin is not just an opportunity to test one's
+                  luck but also helps users accumulate points that can be used
+                  for various purposes on the platform. Users can earn these
+                  reward points with each spin, with the potential to win larger
+                  amounts if they spin multiple times. Points not only enhance
+                  the excitement of using the application but also encourage
+                  users to return frequently to accumulate and utilize their
+                  points for exclusive services or content. With Lucky Spin &
+                  Win, MINI QMP creates an engaging gamification environment
+                  while providing valuable rewards for user participation.
                 </span>
-             </div>
+              </div>
             </div>
             <div>
-             
               <Spin />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="bg-[#F6F9F8]">
+        <div className="container">
+          <div className="flex flex-col justify-center items-center">
+            <div className="rounded-full w-full max-w-[179px] bg-white  mx-auto md:mx-0">
+              <div className="flex justify-center items-center py-2">
+                <Image src="/images/Fire.svg" alt="" width={14} height={14} />
+                <span className="font-inter font-medium text-[14px] ml-2">
+                  Testimonial
+                </span>
+              </div>
+            </div>
+            <span>
+              GET TO KNOW OUR CLIENTS
+            </span>
+          </div>
+
         </div>
       </section>
     </MainLayout>
