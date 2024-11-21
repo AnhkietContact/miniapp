@@ -1,13 +1,13 @@
-import Featured from "@/src/component/featured";
-import Spin from "@/src/component/Spin";
-import Work from "@/src/component/work";
-import MainLayout from "@/src/layout/MainLayout";
+import Testimonial from "@/component/testimonial";
+import Featured from "../src/component/featured";
+import Spin from "../src/component/Spin";
+import Work from "../src/component/work";
 import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
   return (
-    <MainLayout>
+    <>
       <section className="bg-bg-1 bg-cover bg-no-repeat flex items-center justify-center min-h-screen">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left">
@@ -243,7 +243,7 @@ function Home() {
         </div>
       </section>
       <section className="bg-[#F6F9F8]">
-        <div className="container">
+        <div className="container py-10">
           <div className="flex flex-col justify-center items-center">
             <div className="rounded-full w-full max-w-[179px] bg-white  mx-auto md:mx-0">
               <div className="flex justify-center items-center py-2">
@@ -253,14 +253,12 @@ function Home() {
                 </span>
               </div>
             </div>
-            <span>
-              GET TO KNOW OUR CLIENTS
-            </span>
+            <span className="font-inter font-bold text-[30px] md:text-[48px]">GET TO KNOW OUR CLIENTS</span>
           </div>
-
+          <div className="mt-10"><Testimonial/></div>
         </div>
       </section>
-    </MainLayout>
+    </>
   );
 }
 export default Home;
