@@ -8,9 +8,9 @@ import Link from "next/link";
 function Home() {
   return (
     <>
-      <section className="bg-bg-1 bg-cover bg-no-repeat flex items-center justify-center min-h-screen">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left">
+      <section className="bg-bg-1 bg-cover bg-no-repeat flex items-center justify-center ">
+        <div className="container py-32">
+          <div className="flex flex-col lg:flex-row items-center md:justify-between text-center md:text-left">
             <div>
               {/* Badge */}
               <div className="rounded-full w-full max-w-[219px] bg-white bg-opacity-15 mx-auto md:mx-0">
@@ -151,7 +151,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-bg-1 bg-cover bg-no-repeat flex items-center justify-center min-h-screen">
+      <section className="bg-bg-2 bg-cover bg-no-repeat flex items-center justify-center">
         <div className="container py-20">
           <div className="flex justify-between items-center">
             <Image src="/images/Phone-2.png" alt="" width={387} height={625} />
@@ -242,7 +242,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F6F9F8]">
+      <section className="bg-[#F6F9F8] ">
         <div className="container py-10">
           <div className="flex flex-col justify-center items-center">
             <div className="rounded-full w-full max-w-[179px] bg-white  mx-auto md:mx-0">
@@ -253,9 +253,41 @@ function Home() {
                 </span>
               </div>
             </div>
-            <span className="font-inter font-bold text-[30px] md:text-[48px]">GET TO KNOW OUR CLIENTS</span>
+            <span className="font-inter font-bold text-[30px] md:text-[48px]">
+              GET TO KNOW OUR CLIENTS
+            </span>
           </div>
-          <div className="mt-10"><Testimonial/></div>
+          <div className="mt-10">
+            <Testimonial />
+          </div>
+          <div className="flex justify-center">
+            <button className="rounded-full border-2 border-[#FF8311] text-center w-[179px]  py-2 px-4 mt-20">
+              <span className="font-inter  font-semibold  text-[16px]">
+                View More
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="container rounded-[50px] bg-bg-3 bg-cover bg-no-repeat mt-20 mb-20">
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col space-y-4 px-5 py-5">
+            <span className="font-rubik font-bold text-[48px] ">
+              Are you ready to start?
+            </span>
+            <div className="max-w-[550px]">
+              <span className="font-inter text-[18px] ">
+                Personalize your settings, follow your progress, archive your
+                highlights and notes automatically Glose is the ultimate reading
+              </span>
+            </div>
+            <button className="rounded-full text-center w-[179px] bg-[#FF8311] py-2 px-4">
+              <span className="font-inter  font-semibold text-white text-[16px]">
+                Get Started
+              </span>
+            </button>
+          </div>{" "}
+          <Image src="/images/Phone_end.png" alt="" width={656} height={80} />
         </div>
       </section>
     </>

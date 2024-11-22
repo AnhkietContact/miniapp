@@ -19,13 +19,13 @@ const config: Config = {
       backgroundImage: {
         "bg-1": 'url("/images/About-1.png")',
         "bg-2": 'url("/images/About-2.png")',
+        "bg-3": 'url("/images/Bg-end.png")',
         "bgImage-Game": 'url("/image/svg/Game.svg")',
         "bgImage-Sea": 'url("/image/svg/Bg-Sea.svg")',
         "gradient-right": "linear-gradient(90deg, #EBFF00 0%, #FF8A00 100%)",
         "gradient-top": "linear-gradient(180deg, #FF7A00 0%, #994900 100%)",
         "gradient-angular": "linear-gradient(0deg, #FF8311 0%, #994900 100%)",
-        "gradient-white":
-          "linear-gradient(180deg, #FFFFFF 0%, #5A5A5A 100%)",
+        "gradient-white": "linear-gradient(180deg, #FFFFFF 0%, #5A5A5A 100%)",
       },
       fontFamily: {
         orbitron: ['"Orbitron"', "sans-serif"],

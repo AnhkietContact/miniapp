@@ -46,7 +46,7 @@ export default function RootLayout({
           <ThemeProvider theme={innerTheme}>
             <Toaster />
             <Header />
-            <main className="flex-grow">{children}</main>
+            <main className="">{children}</main>
             <Footer />
           </ThemeProvider>
         </main>

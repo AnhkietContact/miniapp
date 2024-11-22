@@ -25,7 +25,7 @@ const Testimonial = () => {
                   }`}>{item.description}</p>
             </div>
             {/* Avatar + Rating + Info */}
-            <div className="flex gap-4">
+            <div className="flex items-center mt-6 gap-4">
               {/* Avatar */}
               <Image
                 src={item.avatar}
@@ -53,7 +53,7 @@ const Testimonial = () => {
                   {item.name}
                 </span>
                 <span
-                  className={`font-inter text-[14px] ${
+                  className={`font-inter text-[14px]  ${
                     item.id === 2 ? "text-white opacity-50 " : "text-[#454747]"
                   }`}
                 >

@@ -36,8 +36,8 @@ const Header: React.FC = () => {
     <Fragment>
       <header
         className={`${
-          isScrolled ? "shadow-md" : ""
-        } bg-[#FFF] fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ease-in-out`}
+          isScrolled ? "bg-[#FFF] shadow-md" : "bg-[#FFF] bg-opacity-30"
+        } fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ease-in-out`}
       >
         <div className="container py-5 flex justify-between items-center">
           {/* Logo */}
