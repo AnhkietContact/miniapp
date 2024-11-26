@@ -4,7 +4,7 @@ import { Rating } from "@mui/material";
 
 const Testimonial = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 space-x-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 space-y-6 md:space-x-6">
       {Know.map((item) => (
         <div
           key={item.id}

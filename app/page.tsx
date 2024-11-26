@@ -27,21 +27,23 @@ function Home() {
                 <span className="font-rubik font-bold text-[25px] md:text-[36px]">
                   Welcome to
                 </span>
-                <span className="font-rubik font-bold text-[50px] md:text-[80px]">
+                <span className="font-rubik font-bold text-[30px] md:text-[80px]">
                   QMP MINI APP
                 </span>
-                <span className="font-rubik font-bold text-[50px] md:text-[60px]">
+                <span className="font-rubik text-[30px] md:text-[60px]">
                   Flexibility
                 </span>
-                <span className="font-medium font-inter text-[18px] mt-4">
-                  Control and optimize the operation of your blockchain nodes
-                  easily and efficiently.
-                </span>
+                <div className="w-full max-w-[480px]">
+                  <span className="font-medium font-inter text-[16px] md:text-[18px] mt-4">
+                    Control And Optimize The Operation Of Your Blockchain Nodes
+                    Easily And Efficiently.
+                  </span>
+                </div>
                 <Link
                   href="/"
                   className="rounded-full bg-[#FF8311] py-2 text-center w-full max-w-[180px] mt-5"
                 >
-                  <span className="font-inter text-white font-semibold">
+                  <span className="font-inter text-white text-[16px] font-semibold">
                     Join now
                   </span>
                 </Link>
@@ -70,7 +72,7 @@ function Home() {
                 height={545}
               />
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 mt-5">
               <div className="rounded-full w-full max-w-[115px] border-2 bg-white bg-opacity-15 mx-auto md:mx-0">
                 <div className="flex justify-center items-center py-2">
                   <Image
@@ -84,10 +86,12 @@ function Home() {
                   </span>
                 </div>
               </div>
-              <div className="w-full max-w-[520px]">
-                <span className="font-bold font-rubik text-[48px]">
-                  All your money needs in one app
-                </span>
+              <div className="w-full max-w-[520px] ">
+                <div className="text-center md:text-left">
+                  <span className="font-bold font-rubik text-[24px] md:text-[48px]">
+                    All your money needs in one app
+                  </span>
+                </div>
                 <div className="flex flex-col md:flex-row gap-5 mt-5">
                   <div className="w-16 h-64 bg-[#FF8311] rounded-full hidden md:block"></div>
                   <div className="rounded-xl bg-[#FFE7D2] px-10 py-10">
@@ -108,7 +112,7 @@ function Home() {
       </section>
       <section>
         <div className="container py-20">
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row md:justify-between gap-10">
             <div className="">
               <div className="rounded-full w-full max-w-[115px] border-2 bg-white bg-opacity-15 mx-auto md:mx-0">
                 <div className="flex justify-center items-center py-2">
@@ -118,8 +122,8 @@ function Home() {
                   </span>
                 </div>
               </div>
-              <div className="w-full max-w-[520px]">
-                <span className="font-bold font-rubik text-[48px]">
+              <div className="w-full max-w-[520px] text-center md:text-left">
+                <span className="font-bold font-rubik text-[24px] md:text-[48px]">
                   All the features in one app
                 </span>
               </div>
@@ -135,7 +139,7 @@ function Home() {
               <Link href={"/"}>
                 <div className="rounded-3xl bg-[#FF8311] mt-20">
                   <div className="flex items-center justify-center gap-5 py-5">
-                    <span className="font-inter font-medium text-white text-[24px]">
+                    <span className="font-inter font-medium text-white text-[18px] md:text-[24px]">
                       Continue with Telegram
                     </span>
                     <Image
@@ -153,7 +157,7 @@ function Home() {
       </section>
       <section className="bg-bg-2 bg-cover bg-no-repeat flex items-center justify-center">
         <div className="container py-20">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between items-center gap-10">
             <Image src="/images/Phone-2.png" alt="" width={387} height={625} />
             <div>
               <div className="rounded-full w-full max-w-[179px] bg-[#470000]  mx-auto md:mx-0">
@@ -164,12 +168,12 @@ function Home() {
                   </span>
                 </div>
               </div>
-              <div className="w-full max-w-[600px]">
-                <span className="font-bold font-rubik text-[48px]">
+              <div className="w-full max-w-[600px] text-center md:text-left mt-5">
+                <span className="font-bold font-rubik text-[24px] md:text-[48px]">
                   We value your trust and security
                 </span>
               </div>
-              <div className="w-full max-w-[550px]">
+              <div className="w-full max-w-[550px] text-center md:text-left">
                 <span className="font-inter text-[16px]">
                   Our mission is to make finance more accessible, transparent,
                   and secure for everyone. With cutting.
@@ -182,13 +186,15 @@ function Home() {
       <section>
         <div className="container py-20">
           <div className="mb-5">
-            <span className="font-inter font-bold text-[64px]">Work</span>
+            <span className="font-inter font-bold text-[32px] md:text-[64px]">
+              Work
+            </span>
           </div>
           <Work />
           <Link href={"/"}>
             <div className="rounded-3xl bg-[#FF8311] mt-20 w-full max-w-[530px]">
               <div className="flex items-center justify-center gap-5 py-2">
-                <span className="font-inter font-medium text-white text-[24px]">
+                <span className="font-inter font-medium text-white text-[18px] md:text-[24px]">
                   Continue with Telegram
                 </span>
                 <Image
@@ -214,9 +220,9 @@ function Home() {
           <div className=" flex justify-center mb-20">
             <Image src="/images/LuckySpin.png" alt="" width={656} height={80} />
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between gap-10 items-center">
             <div className="flex flex-col">
-              <span className="font-rubik font-semibold text-[32px]">
+              <span className="font-rubik font-semibold text-[25px] md:text-[32px]">
                 Lucky Spin & Win
               </span>
               <div className="w-full max-w-[600px] mt-10">
@@ -242,10 +248,10 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F6F9F8] ">
-        <div className="container py-10">
+      <section className="bg-[#F6F9F8] py-10">
+        <div className="container ">
           <div className="flex flex-col justify-center items-center">
-            <div className="rounded-full w-full max-w-[179px] bg-white  mx-auto md:mx-0">
+            <div className="rounded-full w-full max-w-[179px] bg-white mx-auto md:mx-0">
               <div className="flex justify-center items-center py-2">
                 <Image src="/images/Fire.svg" alt="" width={14} height={14} />
                 <span className="font-inter font-medium text-[14px] ml-2">
@@ -253,7 +259,7 @@ function Home() {
                 </span>
               </div>
             </div>
-            <span className="font-inter font-bold text-[30px] md:text-[48px]">
+            <span className="font-inter font-bold text-center md:text-left text-[30px] md:text-[48px]">
               GET TO KNOW OUR CLIENTS
             </span>
           </div>
@@ -261,7 +267,7 @@ function Home() {
             <Testimonial />
           </div>
           <div className="flex justify-center">
-            <button className="rounded-full border-2 border-[#FF8311] text-center w-[179px]  py-2 px-4 mt-20">
+            <button className="rounded-full border-2 border-[#FF8311] text-center w-[179px] py-2 px-4 mt-20">
               <span className="font-inter  font-semibold  text-[16px]">
                 View More
               </span>
@@ -270,9 +276,9 @@ function Home() {
         </div>
       </section>
       <section className="container rounded-[50px] bg-bg-3 bg-cover bg-no-repeat mt-20 mb-20">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center md:justify-between">
           <div className="flex flex-col space-y-4 px-5 py-5">
-            <span className="font-rubik font-bold text-[48px] ">
+            <span className="font-rubik font-bold text-[24px] md:text-[48px] ">
               Are you ready to start?
             </span>
             <div className="max-w-[550px]">
@@ -282,12 +288,18 @@ function Home() {
               </span>
             </div>
             <button className="rounded-full text-center w-[179px] bg-[#FF8311] py-2 px-4">
-              <span className="font-inter  font-semibold text-white text-[16px]">
+              <span className="font-inter font-semibold text-white text-[16px]">
                 Get Started
               </span>
             </button>
-          </div>{" "}
-          <Image src="/images/Phone_end.png" alt="" width={656} height={80} />
+          </div>
+          <Image
+            src="/images/Phone_end.png"
+            alt=""
+            width={656}
+            height={80}
+            className="pb-5"
+          />
         </div>
       </section>
     </>

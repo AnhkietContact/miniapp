@@ -7,13 +7,18 @@ const Work = () => {
       {WorkData.map(({ id, image, title, content }) => (
         <div key={id} className="flex flex-col ">
           <div className="flex items-center gap-4 mb-4">
-            <Image src={image} alt={title} width={88} height={88} />
-            <span className="font-inter font-semibold text-[32px]">
+            <Image
+              src={image}
+              alt={title}
+              width={88}
+              height={88}
+              className="w-[44px] h-[44px] md:w-[88px] md:h-[88px]"
+            />
+            <span className="font-inter font-semibold text-[25px] md:text-[32px]">
               {title}
             </span>
           </div>
-          <div className="w-full max-w-[400px] text-justify">
-            {" "}
+          <div className="w-full max-w-[400px] md:text-justify">
             <span className=" text-[16px] ">{content}</span>
           </div>
         </div>

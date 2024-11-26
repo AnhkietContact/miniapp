@@ -32,7 +32,7 @@ const Footer = () => {
               ))}
             </ul>
           </div> */}
-          <div className="flex gap-2 ">
+          <div className="flex flex-col md:flex-row mt-5 gap-2 ">
             <span className="font-inter font-bold text-black text-[16px]">
               Send Your Feedback :
             </span>
@@ -59,7 +59,7 @@ const Footer = () => {
 
                       {/* Divider: Hiển thị trừ mục cuối */}
                       {index < product.links.length - 1 && (
-                        <div className="h-5 lg:border-l-2 border-t-2 lg:border-t-0 border-[#646060] mx-5 w-full md:w-auto"></div>
+                        <div className="h-5 border-l-2  border-[#646060] mx-5 w-full md:w-auto"></div>
                       )}
                     </li>
                   ))}

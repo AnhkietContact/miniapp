@@ -6,7 +6,10 @@ const Featured = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Lặp qua mảng DATA để render từng mục */}
       {DATA.map((item) => (
-        <div key={item.id} className="flex flex-col">
+        <div
+          key={item.id}
+          className="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <div className="flex items-center gap-2">
             <Image
               src={item.image}
@@ -19,7 +22,11 @@ const Featured = () => {
               {item.title}
             </span>
           </div>
-          <div className="w-full max-w-[270px]">
+          <div
+            className={`w-full ${
+              item.id === 5 ? "max-w-[270px] md:max-w-none" : "max-w-[270px]"
+            }`}
+          >
             <span className="font-inter font-medium text-[13px]">
               {item.content}
             </span>
